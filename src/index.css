@@ -21,12 +21,12 @@
 }
 
 .animate-scroll {
-  animation: scroll 10s linear infinite;
+  animation: scroll 35s linear infinite;
 }
 
-.animate-scroll:hover {
+/* .animate-scroll:hover {
   animation-play-state: paused;
-}
+} */
 
 .scroller-container {
   mask-image: linear-gradient(
