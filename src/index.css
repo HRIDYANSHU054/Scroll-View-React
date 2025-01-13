@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+.scroller-container {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
