@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-import ScrollerItem from "./ScrollerItem";
+import ScrollerItem from "./ScrollerItemV1";
 
 function ScrollerList({ scrollerImages }) {
   // Start with 3 sets of images for smoother scrolling
@@ -37,7 +37,7 @@ function ScrollerList({ scrollerImages }) {
         className="animate-scroll"
         scrollThreshold="800px"
       >
-        <ul className="flex w-full flex-col items-center gap-7 p-5">
+        <ul className="flex w-full flex-col items-center gap-10 p-10 xl:gap-7 xl:p-5">
           {images.map((img, ind) => (
             <ScrollerItem
               key={`${img.id}-${ind}`}
